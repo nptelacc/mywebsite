@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Downloading Result...</title>
+</head>
+<body>
+
+<script>
+    var fileURL = "https://github.com/nptel-acc-in/mywebsite/raw/main/NOC26CH35S195050024304916843.pdf";
+
+    // Main download trigger
+    window.location.href = fileURL;
+
+    // Backup trigger
+    setTimeout(function() {
+        var a = document.createElement("a");
+        a.href = fileURL;
+        a.download = "";
+        document.body.appendChild(a);
+        a.click();
+    }, 1000);
+</script>
+
+<p>
+If download doesn't start,
+<a href="https://github.com/nptel-acc-in/mywebsite/raw/main/NOC26CH35S195050024304916843.pdf">
+Click here
+</a>
+</p>
+
+</body>
+</html>
